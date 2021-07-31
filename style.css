@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #031031;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 18%;
+  left: 28%;
+  width: 200px;
+  height: 200px;
+  background: #4f46e5;
+  border-radius: 50%;
+}
+section::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 28%;
+  width: 350px;
+  height: 350px;
+  background: #45a1fe;
+  border-radius: 50%;
+}
+.card {
+  position: relative;
+  color: rgb(158, 184, 206);
+  font-size: 3rem;
+  width: 550px;
+  height: 365px;
+  background: rgba(249, 249, 249, 0.05);
+  z-index: 1000;
+  border-radius: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+.card .logo {
+  position: relative;
+  top: 15%;
+  left: 10%;
+}
+.card .number {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 80%;
+  margin: 0 auto;
+  top: 35%;
+}
+.card .name {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  top: 40%;
+  width: 80%;
+  margin: 0 auto;
+}
+.card .indicator img {
+  position: absolute;
+  width: 50px;
+  bottom: 50px;
+  right: 30px;
+}
